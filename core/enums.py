@@ -1,0 +1,53 @@
+from enum import Enum
+
+
+class PriceTrend(Enum):
+    FORTE_ALTA = 1
+    ALTA = 2
+    LATERAL = 3
+    BAIXA = 4
+    FORTE_BAIXA = 5
+
+
+class OIState(Enum):
+    QUEDA_FORTE = 1
+    QUEDA_MODERADA = 2
+    ESTAVEL = 3
+    ALTA_MODERADA = 4
+    ALTA_FORTE = 5
+
+
+class FundingState(Enum):
+    MUITO_NEGATIVO = 1
+    NEGATIVO = 2
+    NEUTRO = 3
+    POSITIVO = 4
+    MUITO_POSITIVO = 5
+
+
+class CVDState(Enum):
+    VENDA_FORTE = 1
+    VENDA_MODERADA = 2
+    NEUTRO = 3
+    COMPRA_MODERADA = 4
+    COMPRA_FORTE = 5
+
+
+class LiquidationState(Enum):
+    BAIXO = 1
+    MODERADO = 2
+    ALTO_LONGS = 3
+    ALTO_SHORTS = 4
+    CAPITULACAO_LONGS = 5
+    CAPITULACAO_SHORTS = 6
+
+
+class MarketContext(Enum):
+    ALTA_SAUDAVEL = 1
+    ALTA_EUFORICA_RISCO_TOPO = 2
+    ALTA_SHORT_SQUEEZE = 3
+    QUEDA_CORRECAO_SAUDAVEL = 4
+    QUEDA_CAPITULACAO_RISCO_FUNDO = 5
+    RANGE_BAIXA_ALAVANCAGEM = 6
+    RANGE_ALTA_ALAVANCAGEM_RISCO_SQUEEZE = 7
+    INDEFINIDO = 99
